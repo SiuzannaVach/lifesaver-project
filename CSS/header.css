@@ -1,0 +1,33 @@
+.header {   
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 20px 50px; /* Добавил чуть больше отступов по бокам */
+  background: #556B2F; 
+  color: #9ACD32;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.nav-links {
+  display: flex;       /* Выстраивает пункты меню в ряд */
+  list-style: none;    /* Убирает точки списка */
+}
+
+.nav-links li {
+  margin-left: 20px;   /* Отступ между пунктами меню */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #f4e4bc;
+  font-weight: 500;
+  transition: color 0.3s ease; /* Плавный переход цвета */
+}
+
+.nav-links a:hover {
+  color: #ffffff;      /* Цвет при наведении курсора */
+}

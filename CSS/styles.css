@@ -1,0 +1,59 @@
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./features.css');
+@import url('./footer.css');
+@import url('./responsive.css');
+@import url('./contact.css');
+
+/* Сброс и базовые стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #fff3b0;
+}
+
+/* Адаптив для экранов до 768px (планшеты и телефоны) */
+@media (max-width: 768px) {
+  /* Hero */
+  .hero h1 { /* Исправил h2 на h1, чтобы соответствовало твоему HTML */
+    font-size: 32px; 
+  }
+
+  .hero p {
+    font-size: 16px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column; /* Добавил, чтобы кнопка была под текстом */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  /* Исправлено: в HTML у тебя класс .services, а не .features */
+  .services { 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 40px 10px;
+  }
+
+  .card {
+    width: 90%; 
+    margin-bottom: 20px;
+  }
+} /* Конец медиа-запроса */
+
+.image-block {
+    text-align: center;
+    margin-top: 20px;
+}
