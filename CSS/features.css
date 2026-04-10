@@ -5,7 +5,8 @@
 }
 
 .feature_block {
-    display: flex;
+    display: flex !important; 
+    flex-direction: row !important; 
     background-color: var(--bg-color); /* Бежевый фон самой карточки */
     margin-bottom: 60px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
@@ -44,6 +45,11 @@
     display: flex;
     align-items: center;
 }
+.section_title {
+    padding-top: 0px;    /* Спустит текст чуть ниже от начала зеленого фона */
+    margin-left: 5%;      /* Подвинет текст вправо, чтобы он был вровень с карточками */
+    align-self: flex-start; /* Если у тебя в контейнере стоит center, это прижмет заголовок влево */
+}
 
 
 
@@ -64,5 +70,13 @@
     flex-shrink: 0;/* Чтобы круг не сплющивался */
 }
 
+/* Разворачиваем вторую карточку */
+.feature_block.reverse {
+    flex-direction: row-reverse;
+}
 
-
+/* Настраиваем ширину, чтобы текст и фото делили карточку пополам */
+.feature_image, .feature_text {
+    flex: 1; 
+    width: 50%;
+}
