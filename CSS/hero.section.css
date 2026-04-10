@@ -1,33 +1,45 @@
-.header {   
-  display: flex;
-  justify-content: space-between;
-  align-items: center; 
-  padding: 20px 50px; /* Добавил чуть больше отступов по бокам */
-  background: #556B2F; 
-  color: #9ACD32;
+/* ГЛАВА: ГЛАВНЫЙ БЛОК (HERO) */
+.hero_section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Все элементы будут прижаты к левому краю */
+    padding: 100px 50px;
+    background-color: #f2ede4; /* Светлый фон как на фото */
 }
 
-.logo {
-  font-weight: bold;
-  font-size: 24px;
+.hero_section h1 {
+    font-size: 3rem;
+     line-height: 1.1;       /* Сближает «Bienvenido a» и «Lifesaver» */
+    margin: 0 0 20px 0;    /* Убирает стандартные отступы и дает 20px снизу */
+    color: #1a2e26;        /* Темно-зеленый цвет текста */
+    margin-bottom: 10px;
+    font-weight: normal;
 }
 
-.nav-links {
-  display: flex;       /* Выстраивает пункты меню в ряд */
-  list-style: none;    /* Убирает точки списка */
+.subtitle {
+    font-size: 0.9rem;
+    letter-spacing: 2px;         /* Делает разрядку букв как на макете */
+    margin-bottom: 30px;          /* Расстояние от текста до кнопки */
+    color: #1a2e26;
+    text-transform: uppercase;
+    opacity: 0.8;
 }
 
-.nav-links li {
-  margin-left: 20px;   /* Отступ между пунктами меню */
+.cta_btn {
+    margin-top: 40px;
+    background-color: #9eb091; /* Тот самый оливковый цвет кнопки */
+    color: white;
+    border: none;
+    font-size: 0.8rem;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: 0.3s;
 }
+.cta_btn:hover {
+    background-color: #8da081; /* Темнеет при наведении */
+}
+ 
 
-.nav-links a {
-  text-decoration: none;
-  color: #f4e4bc;
-  font-weight: 500;
-  transition: color 0.3s ease; /* Плавный переход цвета */
-}
-
-.nav-links a:hover {
-  color: #ffffff;      /* Цвет при наведении курсора */
-}

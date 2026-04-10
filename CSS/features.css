@@ -1,42 +1,68 @@
-.services { /* Поменял .features на .services */
-  display: flex;
-  justify-content: space-around;
-  padding: 40px;
-  flex-wrap: wrap;
-  gap: 20px;
+/* ГЛАВА: БЛОКИ КОНТЕНТА (FEATURES) */
+.features_container {
+    background-color: var(--accent-green); /* Оливковый фон всей секции */
+    padding: 80px 10%;
 }
 
-.service-cards { /* Добавил для точности, если используешь обертку */
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  flex-wrap: wrap;
-  gap: 20px;
+.feature_block {
+    display: flex;
+    background-color: var(--bg-color); /* Бежевый фон самой карточки */
+    margin-bottom: 60px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+     /* Вместо тени на фото видна рамка в цвет фона секции */
+    border: 20px solid var(--accent-green);
 }
 
-.card {
-  background: #A3B18A;
-  padding: 20px;
-  min-height: 150px; /* Чтобы карточки не были слишком плоскими */
-  flex: 1 1 calc(33.333% - 20px);
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.feature_block.reverse {
+    flex-direction: row-reverse; /* Разворачивает блок (картинка справа) */
 }
 
-.card:hover {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+.feature_image {
+    width: 50%;
+    min-height: 450px;
+    background-color: #ddd; /* Цвет-заглушка для фото */
+    background-size: cover;
+    background-position: center;
 }
 
-/* Планшетная версия */
-@media (max-width: 1024px) {
-  .card {
-    flex: 1 1 calc(50% - 20px);
-  }
+/* ПОДКЛЮЧАЕМ ФОТО */
+.img1 { background-image: url("img/photo1.jpg"); }
+.img2 { background-image: url("img/photo2.jpg"); }
+.img3 { background-image: url("img/photo3.jpg"); }
+
+
+.feature_text {
+    width: 50%;
+    padding: 80px 60px;   /* Увеличил отступы для «воздуха» */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+.feature_text h2 {
+    font-family: 'Georgia', serif;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.feature_text h2 span {
+    background: var(--accent-green);
+    color: white;
+    /* Делаем идеальный круг */
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 12px;
+    border-radius: 50%;
+    margin-right: 20px;
+    font-size: 1.2rem;
+    flex-shrink: 0;/* Чтобы круг не сплющивался */
+}
+
+
+

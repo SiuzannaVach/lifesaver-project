@@ -3,60 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lifesaver</title>
-   <link rel="stylesheet" href="css/styles.css">
+    <title>IKIGAI - Модульная верстка</title>
+    
+    <!-- ГЛАВА: ПОДКЛЮЧЕНИЕ СТИЛЕЙ (из вашей структуры папок) -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.section.css">
+    <link rel="stylesheet" href="css/features.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="nav">
-            <div class="logo">Lifesaver Ikigai</div>
-            <ul class="nav-links">
-                <li><a href="#about">Sobre Nosotros</a></li>
-                <li><a href="#services">Servicios</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
+
+    <!-- ЧАСТЬ 1: ШАПКА (HEADER) -->
+    <!-- Здесь находится логотип и главное меню навигации -->
+    <header class="header_container">
+        <div class="logo_block">
+        <h1>Lifesaver</h1>
+        <h2 class="logo">IKIGAI</h2>
+        </div>
+
+        <nav class="nav_menu">
+            <a href="#">SOBRE NOSOTROS</a>
+            <a href="#">SERVICIOS</a>
+            <a href="#">CONTACTOS</a>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Bienvenido a Lifesaver IKIGAI</h1>
-        <p>PASIÓN·MISIÓN·VOCACIÓN·PROFESIÓN</p>
-       <a href="#services" **class="btn"**>Nuestros Servicios</a>
-    </section>
+    <main>
+        <!-- ЧАСТЬ 2: ГЛАВНЫЙ БАННЕР (HERO SECTION) -->
+        <!-- Первый блок, который видит пользователь с главным заголовком -->
+        <section class="hero_section">
+         <h1>Bienvenido a <br><span>Lifesaver IKIGAI</span></h1>   
+            <p class="subtitle">PASIÓN · MISIÓN · VOCACIÓN · PROFESIÓN</p>
+            <button class="cta_btn">NUESTROS SERVICIOS</button>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <h2>Sobre Nosotros</h2>
-        <p>Que es el Ikigai?</p>
-         
-    </section>
+        <!-- ЧАСТЬ 3: БЛОКИ КОНТЕНТА (FEATURES) -->
+        <!-- Секция с карточками, которые чередуются (картинка слева / справа) -->
+        <section class="features_container">
+            
+            <!-- Глава 3.1: Первая карточка -->
+            <div class="feature_block">
+                <div class="feature_image img1"></div> <!-- Блок для фото -->
+                
+                
+                <div class="feature_text">
+                    <h2><span>1</span>Una razón para despertar</h2>
+                    <p>Encuentra aquello que te hace vibrar, que amas hacer y que el mundo necesita. El Ikigai es el secreto japonés para una vida larga, feliz и llena de propósito cada mañana.</p>
+                </div>
+            </div>
 
-     <!-- Services Section -->
-    <section id="services" class="services">
-        <h2>Filosifía Japonesa</h2>
-        <div class="service-cards">
-            <div class="card">Una razon para despertar</div>
-            <div class="card">Equilibrio Holístico</div>
-            <div class="card">Longevidad y Bienestar</div>
-        </div>
-    </section>
+            <!-- Глава 3.2: Вторая карточка (Реверсивная - картинка справа) -->
+            <div class="feature_block reverse">
+    <div class="feature_text">
+        <h2><span>2</span>Equilibrio Holístico</h2>
+        <p>Aprende a encontrar la belleza en la imperfección и la serenidad en la naturaleza. El equilibrio holístico nace de aceptar el ciclo natural de la vida con calma и gratitud.</p>
+    </div>
+    
+    <!-- Картинка теперь ВНУТРИ карточки -->
+    <div class="feature_image img2"></div> 
+</div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Contacto</h2>
-        <form>
-            <input type="text" placeholder="Nombre" required>
-            <input type="email" placeholder="Correo electrónico" required>
-            <textarea placeholder="Mensaje"></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2026 Lifesaver. Todos los derechos reservados.</p>
+
+
+         <!-- Глава 3.3: Третья карточка (Картинка слева) -->
+<div class="feature_block">
+    <div class="feature_image img3"></div> 
+    <div class="feature_text">
+        <h2><span>3</span> Longevidad y Bienestar</h2>
+        <p>La salud no es solo la ausencia de enfermedad, sino la armonía total. Cultiva una vida plena a través de la alimentación consciente y la conexión profunda con la tierra.</p>
+    </div>
+</div>
+
+
+    <!-- ЧАСТЬ 4: ПОДВАЛ (FOOTER) -->
+    <footer class="footer_main">
+        <p>&copy; 2026 IKIGAI Project.</p>
     </footer>
+
 </body>
 </html>

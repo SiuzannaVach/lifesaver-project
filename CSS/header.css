@@ -1,33 +1,37 @@
-.header {   
-  display: flex;
-  justify-content: space-between;
-  align-items: center; 
-  padding: 20px 50px; /* Добавил чуть больше отступов по бокам */
-  background: #556B2F; 
-  color: #9ACD32;
+/* ГЛАВА: ШАПКА САЙТА (HEADER) */
+.header_container {
+    background-color: var(--dark-green);
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    padding: 20px 8%;
+    flex-direction: row;
+}
+
+.logo_block {
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .logo {
-  font-weight: bold;
-  font-size: 24px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    /* Убираем стандартный отступ снизу у верхнего слова */
+    margin-bottom: 2px; 
+    /* Если это тег h1/h2, обнуляем все отступы */
+    margin-top: 0; 
 }
 
-.nav-links {
-  display: flex;       /* Выстраивает пункты меню в ряд */
-  list-style: none;    /* Убирает точки списка */
+.nav_menu a{
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    flex-direction: row;
+    
 }
 
-.nav-links li {
-  margin-left: 20px;   /* Отступ между пунктами меню */
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #f4e4bc;
-  font-weight: 500;
-  transition: color 0.3s ease; /* Плавный переход цвета */
-}
-
-.nav-links a:hover {
-  color: #ffffff;      /* Цвет при наведении курсора */
-}
+ 

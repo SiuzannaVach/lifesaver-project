@@ -1,29 +1,12 @@
-/* Адаптив для экранов до 768px */
-@media (max-width: 768px) {
-  /* Features: карточки в колонку */
-  .features {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px; /* добавим немного отступа для мобильных */
-    gap: 20px; /* расстояние между карточками */
-  }
-
-  .card {
-    width: 90%; /* растягиваем на экран */
-    margin-bottom: 20px;
-  }
-
-  /* Header: логотип и меню по вертикали */
-  .header {
-    flex-direction: column;
-    align-items: center;
-    padding: 15px 10px; /* уменьшаем отступ для мобильных */
-  }
-
-  /* Навигация: ссылки в колонку */
-  .nav-links {
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
+/* ГЛАВА: МОБИЛЬНАЯ ВЕРСИЯ */
+@media (max-width: 900px) {
+    .feature_block, .feature_block.reverse {
+        flex-direction: column; /* На телефонах блоки встают друг под друга */
+    }
+    .feature_image, .feature_text {
+        width: 100%;
+    }
+    .hero_section h1 {
+        font-size: 2.2rem;
+    }
 }
